@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+  <meta charset="utf-8">
+
+
+
+  <title>FXOpen CRYPTO</title>
+  <meta name="description" content="">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- Template Basic Images Start -->
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="icon" href="img/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+  <!-- Template Basic Images End -->
+
+  <!-- Custom Browsers Color Start -->
+  <meta name="theme-color" content="#000">
+  <!-- Custom Browsers Color End -->
+
+  <link rel="stylesheet" href="css/main.min.css">
+
+  <!-- Load SVG-Sprite Localstorge Function -->
+  <script>
+    ! function (a, b) {
+      "use strict";
+      var c = "img/sprite.svg",
+        d = 2; //
+      if (!b.createElementNS || !b.createElementNS("http://www.w3.org/2000/svg", "svg").createSVGRect) return !0;
+      var e, f, g = "localStorage" in a && null !== a.localStorage,
+        h = function () {
+          b.body.insertAdjacentHTML("afterbegin", f)
+        },
+        i = function () {
+          b.body ? h() : b.addEventListener("DOMContentLoaded", h)
+        };
+      if (g && localStorage.getItem("inlineSVGrev") == d && (f = localStorage.getItem("inlineSVGdata"))) return i(), !0;
+      try {
+        e = new XMLHttpRequest, e.open("GET", c, !0), e.onload = function () {
+          e.status >= 200 && e.status < 400 && (f = e.responseText, i(), g && (localStorage.setItem("inlineSVGdata",
+            f), localStorage.setItem("inlineSVGrev", d)))
+        }, e.send()
+      } catch (j) {}
+    }(window, document);
+
+  </script>
+</head>
+
+<body>
+  <!-- Custom HTML -->
+  <div class="header">
+    <div class="container">
+      <div class="top-menu">
+        <div class="row align-items-center h100">
+          <div class="col-sm-2">
+            <a href="/">
+              <img src="img/icons_svg/logo.svg" alt="логотип компании FX-OPEN">
+            </a>
+          </div>
+          <div class="col-sm-10">
+            <nav>
+              <ol>
+                <li>
+                  <a href="#our-advantages">Наши преимущества</a>
+                </li>
+                <li>
+                  <a href="#crypto-currency">Криптовалюты</a>
+                </li>
+                <li>
+                  <a href="#meta-trader">Метатрейдер 4</a>
+                </li>
+              </ol>
+              <div class="support">
+                <a href="#">Служба поддержки On-Line</a>
+              </div>
+            </nav>
+          </div>
+          <div id="nav-toggle">
+            <span></span>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="row">
+          <div class="col-md-8 col-xs-12">
+            <h1>ОТКРОЙТЕ
+              <br>
+              <span>КРИПТОСЧЕТ</span>
+            </h1>
+            <h2>И ТОРГУЙТЕ КРИПТОВАЛЮТАМИ НА ФОРЕКС</h2>
+            <h3>Bitcoin, Litecoin, Ethereum и др. (39 пар)</h3>
+          </div>
+          <div class="col-md-4 col-xs-12 text-right">
+            <a class="button button-orange" href="#">Открыть реальный счет</a>
+            <a class="button button-gray" href="#">Открыть демо-счет</a>
+          </div>
+        </div>
+        <div class="crypto-currency">
+          <div class="row text-center">
+            <div class="col">
+              <svg>
+                <use xlink:href="/img/sprite.svg#bitcoin-btc"></use>
+              </svg>
+            </div>
+            <div class="col">
+              <svg>
+                <use xlink:href="/img/sprite.svg#litecoin-ltc"></use>
+              </svg>
+            </div>
+            <div class="col">
+              <svg>
+                <use xlink:href="/img/sprite.svg#etherium"></use>
+              </svg>
+            </div>
+            <div class="col">
+              <svg>
+                <use xlink:href="/img/sprite.svg#eos-invert"></use>
+              </svg>
+            </div>
+            <div class="col">
+              <svg>
+                <use xlink:href="/img/sprite.svg#dash"></use>
+              </svg>
+            </div>
+            <div class="col">
+              <svg>
+                <use xlink:href="/img/sprite.svg#iota"></use>
+              </svg>
+            </div>
+            <div class="col">
+              <svg>
+                <use xlink:href="/img/sprite.svg#colored"></use>
+              </svg>
+            </div>
+            <div class="col">
+              <svg>
+                <use xlink:href="/img/sprite.svg#namecoin-nmc"></use>
+              </svg>
+            </div>
+            <div class="col">
+              <svg>
+                <use xlink:href="/img/sprite.svg#neo"></use>
+              </svg>
+            </div>
+            <div class="col">
+              <svg>
+                <use xlink:href="/img/sprite.svg#peercoin"></use>
+              </svg>
+            </div>
+            <div class="col">
+              <svg>
+                <use xlink:href="/img/sprite.svg#ripple-xrp"></use>
+              </svg>
+            </div>
+            <div class="col">
+              <svg>
+                <use xlink:href="/img/sprite.svg#tether-wallet-usdt"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <main>
+    <section class="conditions">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col">
+            <div class="section-title">
+              <h2>Условия торговли</h2>
+            </div>
+          </div>
+        </div>
+        <div class="content text-center">
+          <div class="row">
+            <div class="col-md-3 col-xs-12">
+              <div class="img"></div>
+              <h3>Минимальный
+                <br>депозит</h3>
+              <p>10 USD</p>
+            </div>
+            <div class="col-md-3 col-xs-12">
+              <div class="img"></div>
+              <h3>Спрэд</h3>
+              <p>Плавающий</p>
+            </div>
+            <div class="col-md-3 col-xs-12">
+              <div class="img"></div>
+              <h3>Комиссии</h3>
+              <p>0,5% за полкруга</p>
+            </div>
+            <div class="col-md-3 col-xs-12">
+              <div class="img"></div>
+              <h3>Плечо</h3>
+              <p>До 1:3</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 col-xs-12">
+              <div class="img"></div>
+              <h3>Валюта счета</h3>
+              <p>USD, EUR, GBP, RUB, JPY,
+                <br> BTC, LTC, ETH, DSH</p>
+            </div>
+            <div class="col-md-3 col-xs-12">
+              <div class="img"></div>
+              <h3>Минимальный
+                <br>объем сделки</h3>
+              <p>0,01 Лота</p>
+            </div>
+            <div class="col-md-3 col-xs-12">
+              <div class="img"></div>
+              <h3>MG CALL / STOP OUT</h3>
+              <p>30 / 15 %</p>
+            </div>
+            <div class="col-md-3 col-xs-12">
+              <div class="img"></div>
+              <h3>Время торговли</h3>
+              <p>24 / 7</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="account">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col">
+            <div class="section-title">
+              <h2>Пополняйте крипто-счет</h2>
+              <h3>Без комиссий</h3>
+              <p>Свыше 20 методов ввода-вывода средств.</p>
+              <p>Депозиты в Bitcoin, Litecoin и Namecoin принимаются без комиссий.</p>
+              <p>Условия ввода bitcoin на крипто-счетах fxopen:</p>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="row justify-content-center text-center">
+            <div class="col-xs-12 col-md-3">
+              <div class="box">
+                <p>КОМИССИЯ
+                  <br>ЗА ВВОД СРЕДСТВ:</p>
+                <p>0 BTC</p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-3">
+              <div class="box">
+                <p>КОМИССИЯ
+                  <br>ЗА ВЫВОД СРЕДСТВ:</p>
+                <p>0.001 BTC</p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-3">
+              <div class="box">
+                <p>МИНИМАЛЬНАЯ
+                  <br>СУММА ДЕПОЗИТА:</p>
+                <p>0.001 BTC</p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-3">
+              <div class="box">
+                <p>МИНИМАЛЬНАЯ
+                  <br>СУММА ВЫВОДА:</p>
+                <p>0.01 BTC</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="our-advantages">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="section-title text-center">
+              <h2>ПОЧЕМУ ВЫГОДНО ТОРГОВАТЬ БИТКОЙНАМИ
+                <br>
+                <span>С FXOPEN</span>?
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="content-item align-content-center">
+                <div class="icon"></div>
+                <h3>ТОРГОВЛЯ РЕАЛЬНОЙ КРИПТОВАЛЮТОЙ</h3>
+                <p>FXOpen дает вам возможность торговать напрямую криптовалюты Bitcoin, Litecoin, Namecoin и Peercoin в парах
+                  с долларом США, Евро и российским рублемв виде контрактов на разницу цен (CFD)!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="content-item align-content-center">
+                <div class="icon"></div>
+                <h3>САМАЯ ДОСТУПНАЯ БИРЖА ОБМЕНА БИТКОЙНОВ</h3>
+                <p>Ликвидность для счетов FXOpen Крипто предоставлена крупнейшими онлайн биржами, что используется для хеджирования
+                  рисков клиентов. Технология исполнения базируется на уникальной системе FXOpen ECN Aggregator.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="content-item align-content-center">
+                <div class="icon"></div>
+                <h3>ПОДЛИННОЕ ECN-ИСПОЛНЕНИЕ</h3>
+                <p>Вы можете торговать криптовалютами и пользоваться всеми преимуществами ECN-исполнения: вы торгуете не против
+                  брокера, а против других участников биржи.</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="content-item align-content-center">
+                <div class="icon"></div>
+                <h3>НИЗКИЕ СПРЕДЫ И КОМИССИИ</h3>
+                <p>Вы получаете преимущество в виде узких рыночных спредов и низких комиссий за реализацию торговых сделок,
+                  в то время как выгода брокера растет с увеличением проторгованного вами объема и прибыли.</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="content-item align-content-center">
+                <div class="icon"></div>
+                <h3>ТОРГОВЛЯ БЕЗ ОГРАНИЧЕНИЙ</h3>
+                <p>Разрешены всевозможные стратегии торговли на Форексе, включая скальпинг и хеджирование, а также любые типы
+                  Советников.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="content-item align-content-center">
+                <div class="icon"></div>
+                <h3>САМАЯ ПОПУЛЯРНАЯ ТОРГОВАЯ ПЛАТФОРМА</h3>
+                <p>Мгновенное открытие и закрытие ордеров в один клик с помощью терминала МТ4.</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="content-item align-content-center">
+                <div class="icon"></div>
+                <h3>БЕЗОПАСНАЯ ТОРГОВЛЯ С ПРОВЕРЕННЫМ БРОКЕРОМ</h3>
+                <p>FXOpen – надёжная компания с действующими лицензиями и более чем 10-летним опытом оказания брокерских услуг.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="crypto-currency">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="section-title text-center">
+              <h2>НА КРИПТО-СЧЕТАХ FXOPEN ДОСТУПНЫ
+                <br>
+                <span>24 ТОРГОВЫХ ИНСТРУМЕНТА С УЧАСТИЕМ:</span>
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="row text-center align-content-center justify-content-center">
+            <div class="col-xs-1">
+              <div class="content-item">
+                <svg>
+                  <use xlink:href="/img/sprite.svg#bitcoin-btc"></use>
+                </svg>
+                <p>Bitcoin</p>
+              </div>
+            </div>
+            <div class="col-xs-1">
+              <div class="content-item">
+                <svg>
+                  <use xlink:href="/img/sprite.svg#litecoin-ltc-c"></use>
+                </svg>
+                <p>Litecoin</p>
+              </div>
+            </div>
+            <div class="col-xs-1">
+              <div class="content-item">
+                <svg>
+                  <use xlink:href="/img/sprite.svg#ethereum-c"></use>
+                </svg>
+                <p>Litecoin</p>
+              </div>
+            </div>
+            <div class="col-xs-1">
+              <div class="content-item">
+                <svg>
+                  <use xlink:href="/img/sprite.svg#peercoin-c"></use>
+                </svg>
+                <p>Peercoin</p>
+              </div>
+            </div>
+            <div class="col-xs-1">
+              <div class="content-item">
+                <svg>
+                  <use xlink:href="/img/sprite.svg#emercoin-c"></use>
+                </svg>
+                <p>Emercoin</p>
+              </div>
+            </div>
+            <div class="col-xs-1">
+              <div class="content-item">
+                <svg>
+                  <use xlink:href="/img/sprite.svg#namecoin-nmc-c"></use>
+                </svg>
+                <p>Namecoin</p>
+              </div>
+            </div>
+            <div class="col-xs-1">
+              <div class="content-item">
+                <svg>
+                  <use xlink:href="/img/sprite.svg#dash-c"></use>
+                </svg>
+                <p>Dash</p>
+              </div>
+            </div>
+            <div class="col-xs-1">
+              <div class="content-item">
+                <svg>
+                  <use xlink:href="/img/sprite.svg#ripple-xrp-c"></use>
+                </svg>
+                <p>Ripple</p>
+              </div>
+            </div>
+          </div>
+          <div class="row text-center align-content-center justify-content-center">
+            <div class="col-xs-1">
+              <div class="content-item">
+                <svg>
+                  <use xlink:href="/img/sprite.svg#bitcoin-cash-bch-c"></use>
+                </svg>
+                <p>Bitcoin Cash</p>
+              </div>
+            </div>
+            <div class="col-xs-1">
+              <div class="content-item">
+                <svg>
+                  <use xlink:href="/img/sprite.svg#etherium-classic-etc-c"></use>
+                </svg>
+                <p>Ethereum
+                  <br>Classic</p>
+              </div>
+            </div>
+            <div class="col-xs-1">
+              <div class="content-item">
+                <svg>
+                  <use xlink:href="/img/sprite.svg#original-c"></use>
+                </svg>
+                <p>Monero</p>
+              </div>
+            </div>
+            <div class="col-xs-1">
+              <div class="content-item">
+                <svg>
+                  <use xlink:href="/img/sprite.svg#neo-c"></use>
+                </svg>
+                <p>NEO</p>
+              </div>
+            </div>
+            <div class="col-xs-1">
+              <div class="content-item">
+                <svg>
+                  <use xlink:href="/img/sprite.svg#eos-invert-c"></use>
+                </svg>
+                <p>EOS</p>
+              </div>
+            </div>
+            <div class="col-xs-1">
+              <div class="content-item">
+                <svg>
+                  <use xlink:href="/img/sprite.svg#iota"></use>
+                </svg>
+                <p>IOTA</p>
+              </div>
+            </div>
+            <div class="col-xs-1">
+              <div class="content-item">
+                <svg>
+                  <use xlink:href="/img/sprite.svg#omni-c"></use>
+                </svg>
+                <p>OMNI</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="popular-crypto">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="section-title text-center">
+              <h2>Most Popular Cryptocurrency pairs</h2>
+            </div>
+          </div>
+        </div>
+        <div class="content text-center">
+          <div class="row">
+            <div class="col-xs-12 col-md-4">
+              <div class="content-item">
+                <div class="icon">
+                  <svg>
+                    <use xlink:href="/img/sprite.svg#bitcoin-btc"></use>
+                  </svg>
+                </div>
+                <h2>BTCUSD</h2>
+                <h4>Bitcoin vs US Dollar CFD</h4>
+                <p>Leverage:</p>
+                <p>1:3</p>
+                <p>Size of 1 lot:</p>
+                <p>BTC 1.0</p>
+                <p>Spread:</p>
+                <p>floating from 0 pips</p>
+                <p>Commission:</p>
+                <p>1% of the price
+                  <span>(round turn)</span>
+                </p>
+                <p>Minimum contract: </p>
+                <p>lots 0.01</p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+              <div class="content-item">
+                <div class="icon">
+                  <svg>
+                    <use xlink:href="/img/sprite.svg#ethereum-c"></use>
+                  </svg>
+                </div>
+                <h2>ETHUSD</h2>
+                <h4>Ethereum vs US Dollar CFD</h4>
+                <p>Leverage:</p>
+                <p>1:3</p>
+                <p>Size of 1 lot:</p>
+                <p>ETH 1.0</p>
+                <p>Spread:</p>
+                <p>floating from 0 pips</p>
+                <p>Commission:</p>
+                <p>1% of the price
+                  <span>(round turn)</span>
+                </p>
+                <p>Minimum contract: </p>
+                <p>lots 0.1</p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+              <div class="content-item">
+                <div class="icon">
+                  <svg>
+                    <use xlink:href="/img/sprite.svg#ripple-xrp-c"></use>
+                  </svg>
+                </div>
+                <h2>XPRUSD</h2>
+                <h4>Ripple vs US Dollar CFD</h4>
+                <p>Leverage:</p>
+                <p>1:3</p>
+                <p>Size of 1 lot:</p>
+                <p>XRP 1.0</p>
+                <p>Spread:</p>
+                <p>floating from 0 pips</p>
+                <p>Commission:</p>
+                <p>1% of the price
+                  <span>(round turn)</span>
+                </p>
+                <p>Minimum contract: </p>
+                <p>XRP 1.0</p>
+              </div>
+            </div>
+          </div>
+          <div class="row text-center">
+            <div class="col">
+              <p>Learn more about</p>
+              <a href="#">Contract specification</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="registration">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="section-title text-center">
+              <h2>НАЧНИТЕ ТОРГОВАТЬ С FXOPEN</h2>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="row">
+            <div class="col">
+              <iframe id="reg_form" src="https://my.fxopen.ru/api/AuthApi/Registrate?returnUrl=https://landing.fxopen.ru%2Fregistration%2Fregistrationcomplete&amp;state=LandingPage"
+                style="width: 100%; min-height: 600px;" frameborder="0px"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 col-xs-12 left">
+            <a href="/">
+              <img src="img/icons_svg/logo.svg" alt="логотип компании FX-OPEN">
+            </a>
+            <p>© FXOpen, 2017.</p>
+            <p>Все права защищены</p>
+          </div>
+          <div class="col-md-10 col-xs-12">
+            <p>Торговля на финансовом рынке Forex связана с существенными рисками, включая риск полной потери средств и другие
+              затраты, и не может быть рекомендована всем. Клиент должен самостоятельно и осознанно решить, подходит ли ему
+              этот вид деятельности, учитывая свои финансовые возможности, опыт в сфере инвестиций, готовность к риску и
+              другие факторы.</p>
+            <p>Компания
+              <a href="#">FXOpen Markets Limited</a> зарегиcтрирована на территории Невиса (регистрационный номер компании 42235). FXOpen
+              является членом международной финансовой комиссии
+              <a href="#">The Financial Commission</a>.</p>
+            <p>ООО «ЭфЭксОпэн» (FXOpen Company), член НП "
+              <a href="#">Комиссия по Финансовому Сервису</a>", свидетельство 13ФО01 № 00001 от 15.11.2013 г., является финансовым консультантом
+              на территории Российской Федерации.</p>
+            <p>Компания FXOpen не предоставляет услуги резидентам США.</p>
+            <div class="nav-f">
+              <ul>
+                <li>
+                  <a href="https://www.fxopen.ru/ru/konfidentsialnost/">Политика конфиденциальности</a>
+                </li>
+                <li>
+                  <a href="https://www.fxopen.ru/ru/usloviya-dokumenty/">Условия</a>
+                </li>
+                <li>
+                  <a href="https://www.fxopen.ru/ru/aml-1/">AML</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+  <script src="js/scripts.min.js"></script>
+</body>
+
+</html>

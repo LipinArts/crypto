@@ -1,0 +1,139 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+
+//Extra large: ≥1200px
++media-breakpoint-down(xl)
+
+//Large: ≥992px
++media-breakpoint-down(lg)
+
+//Medium: ≥768px
++media-breakpoint-down(md)
+	#nav-toggle
+		display: inline-block !important
+		position: fixed
+		top: 5%
+		right: 10%
+	nav
+		display: none
+		position: fixed
+		width: 100%
+		height: 100%
+		left: 0
+		top: 0
+		border: 1px solid transparent
+		z-index: 10
+		background-color: rgba(0,0,0,.9)
+		ol
+			position: relative
+			top: 43%
+			transform: translateY(-50%)
+			li
+				display: block
+				text-align: center
+				margin-bottom: 20px
+
+			a
+				font-size: 22px
+				margin-left: 0
+	.support
+
+		top: 90%
+		left: 50%
+		right: auto
+		transform: translateX(-50%)
+		a
+			margin: 0
+
+
+//Small: ≥576px
++media-breakpoint-down(sm)
+	#nav-toggle
+		right: 15%
+	.header .content h1
+		font-size: 42px
+	.top-menu
+		height: 90px
+	.header
+		img
+			width: 200px
+		.content
+			margin-top: 33px
+			h2
+				font-size: 26px
+			h3
+				font-size: 20px
+				margin-bottom: 20px
+			.row div:nth-of-type(2)
+				text-align: center
+		.crypto-currency
+			margin-top: 30px
+	#popular-crypto .content-item
+		width: 100%
+		margin-bottom: 20px
+	.conditions .content
+		margin-top: 20px
+	.conditions
+		.section-title
+			margin-top: 35px
+	.conditions .content .row:nth-of-type(2)
+		margin-top: 0
+	.conditions .content h3
+		margin-top: 0
+	.conditions .content .row>div
+		margin-bottom: 25px
+	.account .content .box
+		margin-bottom: 20px
+	.account .content
+		margin-top: 30px
+	#our-advantages .section-title
+		margin-top: 35px
+	#our-advantages .content .row:nth-of-type(even) .content-item
+		height: auto
+	#our-advantages .content .content-item
+		height: auto
+		padding: 15px
+		text-align: center
+	#our-advantages .content .row:nth-of-type(even) .icon, #our-advantages .content .row:nth-of-type(odd) .icon
+		position: static
+		display: inline-block
+	#our-advantages .content .row:nth-of-type(7)
+		margin-bottom: 0
+	#crypto-currency .content .content-item
+		margin: 0 10px 10px
+	footer
+		padding-top: 30px
+		padding-bottom: 20px
+	.button-orange
+		margin-bottom: 15px
+
+
+
+//Extra small: >0
++media-breakpoint-down(xs)
+	#popular-crypto h2
+		font-size: 30px
+	#crypto-currency h2
+		font-size: 30px
+	#popular-crypto .content-item h4::after
+		width: 100%
+
+/*==========  Mobile First  ==========*/
+
+//Extra small: <576px
++media-breakpoint-up(xs)
+
+//Small: ≤576px
++media-breakpoint-up(sm)
+
+//Medium: ≤768px
++media-breakpoint-up(md)
+
+//Large: ≤992px
++media-breakpoint-up(lg)
+
+//Extra large: ≤1200px
++media-breakpoint-up(xl)
